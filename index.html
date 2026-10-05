@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aris Mateo | Portafolio Profesional</title>
+  <meta name="description" content="Portafolio profesional de Aris Mateo: soporte técnico, QA funcional, automatización IA, sistemas web, SISROS v1.7, n8n, Make y chatbots." />
+  <style>
+    :root { --bg:#0f172a; --card:#ffffff; --text:#0f172a; --muted:#64748b; --blue:#2563eb; --blue-dark:#1d4ed8; --soft:#eff6ff; --border:#dbeafe; --accent:#38bdf8; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:#f8fafc;line-height:1.6} a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}.container{width:min(1120px,calc(100% - 32px));margin:0 auto} header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #e2e8f0}.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--bg)}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--accent));display:grid;place-items:center;color:#fff}.navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}.hero{background:radial-gradient(circle at 15% 20%,rgba(56,189,248,.28),transparent 25%),radial-gradient(circle at 85% 30%,rgba(37,99,235,.35),transparent 28%),linear-gradient(135deg,#0f172a 0%,#172554 100%);color:white;padding:78px 0 58px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}.eyebrow{color:#bfdbfe;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px} h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:14px 0 18px}.hero p{font-size:18px;color:#dbeafe;max-width:760px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;border:1px solid transparent;font-weight:700;cursor:pointer}.btn.primary{background:#fff;color:var(--blue-dark)}.btn.secondary{border-color:rgba(255,255,255,.45);color:#fff}.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:26px;padding:22px;box-shadow:0 28px 80px rgba(0,0,0,.22)}.hero-card img{width:100%;border-radius:20px;border:1px solid rgba(255,255,255,.2)} section{padding:64px 0} h2{font-size:clamp(28px,4vw,42px);margin:0 0 14px;color:#0f172a}.lead{color:var(--muted);font-size:18px;max-width:820px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:var(--card);border:1px solid #e2e8f0;border-radius:22px;padding:22px;box-shadow:0 16px 38px rgba(15,23,42,.06)}.card h3{margin:0 0 8px;font-size:21px}.pillbox{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.pill{font-size:12px;font-weight:700;color:#1e3a8a;background:#eff6ff;border:1px solid #dbeafe;padding:6px 10px;border-radius:999px}.project{background:white;border:1px solid #e2e8f0;border-radius:28px;overflow:hidden;box-shadow:0 16px 40px rgba(15,23,42,.06);margin-top:28px}.project-grid{display:grid;grid-template-columns:1fr 1fr}.project-media{background:#0f172a;padding:18px;display:flex;align-items:center} video,.project-media img{width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.12);background:#111827}.project-body{padding:28px}.tag{display:inline-block;background:var(--soft);color:var(--blue-dark);border:1px solid var(--border);font-weight:800;border-radius:999px;padding:6px 12px;font-size:12px;margin-bottom:12px} ul{padding-left:20px}.services{background:#ffffff}.contact{background:#0f172a;color:white}.contact h2,.contact .lead{color:white}.contact .lead{color:#cbd5e1}.contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:24px} footer{background:#020617;color:#94a3b8;padding:24px 0;font-size:14px}@media (max-width:820px){.hero-grid,.project-grid,.grid{grid-template-columns:1fr}.navlinks{display:none}section{padding:46px 0}}
+  
+    .project-media {
+      justify-content: center;
+    }
+    .whatsapp-project .project-media video {
+      width: auto;
+      max-width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+    }
+
+  
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 80;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 18px;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 18px 40px rgba(34,197,94,.35);
+  border: 1px solid rgba(255,255,255,.28);
+}
+.whatsapp-float:hover { text-decoration: none; background: #16a34a; }
+@media (max-width: 820px) {
+  .whatsapp-float { right: 14px; bottom: 14px; padding: 12px 14px; font-size: 14px; }
+}
+
+  
+    /* Botón flotante WhatsApp: solo ícono circular */
+    .whatsapp-float {
+      position: fixed !important;
+      right: 24px !important;
+      bottom: 24px !important;
+      width: 62px !important;
+      height: 62px !important;
+      min-width: 62px !important;
+      max-width: 62px !important;
+      padding: 0 !important;
+      border-radius: 50% !important;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+      color: #fff !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 16px 42px rgba(18, 140, 126, .38) !important;
+      z-index: 9999 !important;
+      border: 3px solid rgba(255,255,255,.95) !important;
+      text-decoration: none !important;
+      overflow: visible !important;
+      line-height: 0 !important;
+      font-size: 0 !important;
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease !important;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-3px) scale(1.05) !important;
+      box-shadow: 0 22px 54px rgba(18, 140, 126, .48) !important;
+      filter: saturate(1.08) !important;
+      text-decoration: none !important;
+    }
+    .whatsapp-float svg {
+      width: 34px !important;
+      height: 34px !important;
+      display: block !important;
+      flex: 0 0 auto !important;
+    }
+    .whatsapp-float::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border-radius: 999px;
+      border: 2px solid rgba(37, 211, 102, .32);
+      animation: whatsappPulse 2.2s ease-out infinite;
+      pointer-events: none;
+    }
+    @keyframes whatsappPulse {
+      0% { transform: scale(.84); opacity: .75; }
+      70% { transform: scale(1.18); opacity: 0; }
+      100% { transform: scale(1.18); opacity: 0; }
+    }
+    @media (max-width: 640px) {
+      .whatsapp-float {
+        right: 16px !important;
+        bottom: 16px !important;
+        width: 56px !important;
+        height: 56px !important;
+        min-width: 56px !important;
+        max-width: 56px !important;
+      }
+      .whatsapp-float svg {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<header><div class="container nav"><div class="brand"><span class="logo">AM</span><span>Aris Mateo</span></div><nav class="navlinks"><a href="#perfil">Perfil</a><a href="#proyectos">Proyectos</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav></div></header>
+<main>
+<section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Portafolio profesional 2026</div><h1>Soporte, QA funcional y automatización IA para negocios reales.</h1><p>Ingeniero de Sistemas enfocado en modernización de sistemas web, automatización de procesos, reportes ejecutivos, demos funcionales y documentación técnica usando IA generativa como copiloto.</p><div class="actions"><a class="btn primary" href="#proyectos">Ver proyectos</a><a class="btn secondary" href="assets/docs/Portafolio_Profesional_Aris_Mateo_Sep2026.pdf" target="_blank">Descargar portafolio PDF</a></div></div><div class="hero-card"><img src="assets/images/thumb-sisros.png" alt="Demo SISROS v1.7" /></div></div></section>
+<section id="perfil"><div class="container"><h2>Perfil profesional</h2><p class="lead">Combino experiencia en sistemas, soporte técnico y gestión operativa con herramientas modernas de IA, automatización y desarrollo web. Mi enfoque es ayudar a ordenar procesos, reducir trabajo manual, validar sistemas y mostrar resultados con claridad.</p><div class="grid"><div class="card"><h3>Soporte y QA funcional</h3><p>Validación de flujos, formularios, dashboards, reportes, incidencias y experiencia de usuario.</p></div><div class="card"><h3>Automatización IA</h3><p>Flujos con n8n, Make, OpenAI, Google Sheets, Calendar, WhatsApp, webhooks y asistentes.</p></div><div class="card"><h3>Sistemas web</h3><p>Java/JSP/MySQL, reportes Excel, PDF, correo, dashboards y modernización progresiva.</p></div></div></div></section>
+<section id="proyectos"><div class="container"><h2>Proyectos destacados</h2><p class="lead">Casos prácticos desarrollados o modernizados con enfoque en valor operativo, automatización y presentación ejecutiva.</p>
+<article class="project">
+  <div class="project-grid">
+    <div class="project-media">
+      <iframe 
+        src="https://www.youtube.com/embed/N93tVlffSEM" 
+        title="SISROS - Sistema de Gestión Operativa, Finanzas y Fidelización" 
+        style="width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="project-body">
+      <span class="tag">En producción activa</span>
+      <h3>SISROS - Sistema de Gestión Operativa, Finanzas y Fidelización</h3>
+      <p>Plataforma integral en producción continua para centros de detailing y car wash, en proceso de extensión para talleres automotrices. Digitaliza el ciclo de vida del servicio, elimina mermas operativas y automatiza la rentabilidad del negocio.</p>
+      <ul>
+        <li>Operación y Flujo de Caja en Tiempo Real.</li>
+        <li>Business Intelligence & Reportería Gerencial.</li>
+        <li>Módulo de Fidelización (Mini CRM).</li>
+        <li>Validación Comercial.</li>
+      </ul>
+      <div class="pillbox">
+        <span class="pill">Java</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">SP / Servlets</span>
+        <span class="pill">Excel</span>
+        <span class="pill">WhatsApp asistido</span>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="project">
+  <div class="project-grid">
+    <div class="project-media">
+      <iframe 
+        src="https://www.youtube.com/embed/XAqvC75byQA" 
+        title="Demo agente voz vapi-make" 
+        style="width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="project-body">
+      <span class="tag">Agente de Voz</span>
+      <h3>Agente de Voz IA Clínico con Triaje de Urgencias & Certificación QA</h3>
+      <p>Asistente de voz autónomo para clínicas médicas/odontológicas con disponibilidad 24/7, capaz de agendar citas, gestionar cancelaciones y detectar emergencias médicas en tiempo real con derivación inmediata.</p>
+      <ul>
+        <li>Atención y Agendamiento 24/7.</li>
+        <li>Triaje Inteligente de Urgencias.</li>
+        <li>Automatización y Trazabilidad.</li>
+        <li>Certificación QA Rigurosa.</li>
+      </ul>
+      <div class="pillbox">
+        <span class="pill">Vapi</span>
+        <span class="pill">Make</span>
+        <span class="pill">Google Workspace</span>
+        <span class="pill">QA Testing</span>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="project">
+  <div class="project-grid">
+    <div class="project-media">
+      <iframe 
+        src="https://www.youtube.com/embed/V1H6lrrAxNI" 
+        title="Automatización de contenido para redes sociales con Make e IA" 
+        style="width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="project-body">
+      <span class="tag">Automatización IA</span>
+      <h3>Automatización de contenido para redes sociales</h3>
+      <p>Flujo no-code/low-code para organizar noticias en Google Sheets, investigar, resumir y adaptar contenido a distintos canales digitales.</p>
+      <ul>
+        <li>Asistentes por canal: Instagram, Facebook, LinkedIn y blog.</li>
+        <li>Generación de imágenes para publicaciones.</li>
+        <li>Revisión de resultados antes de compartirlos.</li>
+      </ul>
+      <div class="pillbox">
+        <span class="pill">Make</span>
+        <span class="pill">Google Sheets</span>
+        <span class="pill">OpenAI</span>
+        <span class="pill">Ideogram</span>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="project">
+  <div class="project-grid">
+    <div class="project-media">
+      <iframe 
+        src="https://www.youtube.com/embed/110cknck4TE" 
+        title="Digitalización de reservas con chatbot" 
+        style="width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="project-body">
+      <span class="tag">Web + Chatbot IA</span>
+      <h3>Digitalización de reservas con chatbot</h3>
+      <p>Prototipo web para car wash con chatbot integrado, agente IA en n8n, registro en Google Sheets y eventos en Google Calendar.</p>
+      <ul>
+        <li>Atención y gestión de reservas en tiempo real.</li>
+        <li>Interpretación de solicitudes mediante Agente IA.</li>
+        <li>Registro operativo y recordatorios en calendario.</li>
+      </ul>
+      <div class="pillbox">
+        <span class="pill">Bolt</span>
+        <span class="pill">n8n</span>
+        <span class="pill">OpenAI</span>
+        <span class="pill">Calendar</span>
+        <span class="pill">Sheets</span>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="project whatsapp-project">
+  <div class="project-grid">
+    <div class="project-media">
+      <iframe 
+        src="https://www.youtube.com/embed/SmUnN1TPlzU" 
+        title="Demo agente whatsapp agendamiento" 
+        style="width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px;" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="project-body">
+      <span class="tag">Agente IA + WhatsApp</span>
+      <h3>Agente de agendamiento con WhatsApp</h3>
+      <p>Demo de automatización conversacional para atención y agendamiento, orientada a negocios que necesitan responder consultas, clasificar solicitudes y organizar citas desde WhatsApp.</p>
+      <ul>
+        <li>Interacción conversacional con usuarios para orientar la reserva.</li>
+        <li>Apoyo a procesos de agendamiento y seguimiento de clientes.</li>
+        <li>Aplicación práctica para clínicas, servicios profesionales y negocios locales.</li>
+        <li>Base para futuras integraciones con n8n, calendario, correo y CRM.</li>
+      </ul>
+      <div class="pillbox">
+        <span class="pill">WhatsApp</span>
+        <span class="pill">Agente IA</span>
+        <span class="pill">Automatización</span>
+        <span class="pill">Agendamiento</span>
+        <span class="pill">Atención 24/7</span>
+        <span class="pill">N8N / VPS</span>
+      </div>
+    </div>
+  </div>
+</article>
+
+</div></section>
+<section id="servicios" class="services"><div class="container"><h2>Servicios ofrecidos</h2><p class="lead">Servicios iniciales para negocios pequeños, equipos y clientes piloto.</p><div class="grid"><div class="card"><h3>QA funcional y soporte</h3><p>Pruebas, revisión de flujos, documentación de incidencias y acompañamiento a usuarios.</p></div><div class="card"><h3>Automatizaciones IA</h3><p>Flujos con n8n o Make para reservas, WhatsApp, reportes, contenido y seguimiento.</p></div><div class="card"><h3>Landing + demo</h3><p>Página profesional, portafolio, video demo, CV descargable y contacto centralizado.</p></div></div></div></section>
+<section id="contacto" class="contact"><div class="container"><h2>Contacto</h2><p class="lead">Disponible para oportunidades remotas, soporte técnico, QA funcional, automatización IA e implementación de soluciones web.</p><div class="contact-card"><p><strong>Email:</strong> <a href="mailto:info@tuproyectotecia.com">info@tuproyectotecia.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aris-mateo-aa7b60166" target="_blank">linkedin.com/in/aris-mateo-aa7b60166</a></p><p><strong>GitHub:</strong> <a href="https://github.com/arismariamateo" target="_blank">github.com/arismariamateo</a></p><div class="actions"><a class="btn primary" href="assets/docs/Portafolio_Profesional_Aris_Mateo_Sep2026.pdf" target="_blank">Portafolio PDF</a><a class="btn secondary" href="assets/docs/CV_Aris_Mateo_Soporte_Tecnico_Remoto_2026.pdf" target="_blank">CV Soporte</a><a class="btn secondary" href="assets/docs/CV_Aris_Mateo_QA_Funcional_2026.pdf" target="_blank">CV QA</a><a class="btn secondary" href="assets/docs/CV_Aris_Mateo_Automatizacion_IA_2026.pdf" target="_blank">CV Automatización IA</a></div></div></div></section>
+</main><footer><div class="container">Aris Mateo - Portafolio profesional 2026. Landing estática lista para publicar.</div></footer>
+
+
+  <a class="whatsapp-float" href="/whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Escríbeme por WhatsApp" title="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16.04 3.2A12.74 12.74 0 0 0 5.18 22.6L3.6 28.4l5.94-1.56a12.7 12.7 0 0 0 6.5 1.78h.01A12.73 12.73 0 0 0 16.04 3.2Zm7.47 18.23c-.31.88-1.82 1.68-2.55 1.79-.65.1-1.47.14-2.37-.15-.55-.18-1.25-.41-2.15-.8-3.78-1.63-6.24-5.43-6.43-5.68-.19-.25-1.53-2.03-1.53-3.87s.97-2.75 1.31-3.13c.34-.38.75-.47 1-.47.25 0 .5 0 .72.01.23.01.54-.09.84.64.31.75 1.06 2.59 1.15 2.78.09.19.16.41.03.66-.13.25-.19.41-.38.63-.19.22-.4.49-.56.66-.19.19-.38.4-.16.78.22.38.97 1.6 2.08 2.59 1.43 1.27 2.63 1.67 3.01 1.86.38.19.6.16.82-.09.22-.25.94-1.09 1.19-1.47.25-.38.5-.31.84-.19.34.13 2.18 1.03 2.55 1.22.38.19.63.28.72.44.09.16.09.91-.22 1.78Z"/>
+    </svg>
+  </a>
+
+</body></html>

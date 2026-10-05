@@ -1,0 +1,6 @@
+# Ignorar carpeta local de videos pesados
+assets/videos/
+*.mp4
+
+# Ignorar únicamente las miniaturas viejas
+assets/images/thumb-*.png
