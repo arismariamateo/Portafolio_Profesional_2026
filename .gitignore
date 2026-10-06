@@ -4,3 +4,4 @@ assets/videos/
 
 # Ignorar únicamente las miniaturas viejas
 assets/images/thumb-*.png
+!assets/images/thumb-sisros.png
